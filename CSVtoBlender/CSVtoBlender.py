@@ -3,6 +3,21 @@ import csv
 import math
 
 
+"""
+※注意※
+
+①骨の名前はCSVの一行目と同じ名前にしてください。ボーンが存在しなければ無視します。
+例：Hips,Spine,Chest　など
+
+②CSVを焼き付けたいボーンを選択してからスクリプトを使用してください。
+
+③CSVはblenderを保存しているドライブ内にしてください。
+→別のドライブにしてると失敗します。なぜなのかわかってないので調べます…。
+
+④現在のフレームからベイクが開始します。
+
+"""
+
 # カレントフレームをシーンの開始フレームに設定
 frame_cur = (bpy.context.scene.frame_start)
 bpy.context.scene.frame_set(frame_cur)
