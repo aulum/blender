@@ -43,7 +43,7 @@ def rotateBone(time, boneName, z, x, y):
         return
     # 骨を選択
     arm.data.bones[boneName].select = True
-    # クオータニオンからYXZに変換する
+    # クオータニオンからZXYに変換する
     psbone[boneName].rotation_mode = 'ZXY'
     # 回転させる
     psbone[boneName].rotation_euler = (
